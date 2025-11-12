@@ -85,6 +85,19 @@ const resources = {
         rights: '© 2025 Olena Yasynetska',
         privacy: 'Політика конфіденційності',
       },
+      pages: {
+        portfolio: {
+          label: 'Портфоліо',
+          heading: 'Портфоліо',
+          description: 'Перегляньте вибрані проєкти та кейси.',
+          backCta: 'На головну',
+        },
+        notFound: {
+          title: 'Сторінку не знайдено',
+          description: 'Можливо, її було переміщено або видалено.',
+          cta: 'Повернутися на головну',
+        },
+      },
     },
   },
   en: {
@@ -163,6 +176,19 @@ const resources = {
         rights: '© 2025 Olena Yasynetska',
         privacy: 'Privacy Policy',
       },
+      pages: {
+        portfolio: {
+          label: 'Portfolio',
+          heading: 'Portfolio',
+          description: 'Explore selected projects and case studies.',
+          backCta: 'Back to home',
+        },
+        notFound: {
+          title: 'Page not found',
+          description: 'The page you requested may have been moved or deleted.',
+          cta: 'Back to home',
+        },
+      },
     },
   },
   de: {
@@ -240,6 +266,20 @@ const resources = {
       footer: {
         rights: '© 2025 Olena Yasynetska',
         privacy: 'Datenschutzerklärung',
+      },
+      pages: {
+        portfolio: {
+          label: 'Portfolio',
+          heading: 'Portfolio',
+          description: 'Entdecken Sie ausgewählte Projekte und Case Studies.',
+          backCta: 'Zur Startseite',
+        },
+        notFound: {
+          title: 'Seite nicht gefunden',
+          description:
+            'Die von Ihnen angeforderte Seite wurde möglicherweise verschoben oder gelöscht.',
+          cta: 'Zur Startseite',
+        },
       },
     },
   },

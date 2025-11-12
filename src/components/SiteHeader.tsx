@@ -2,10 +2,47 @@ import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Mail, Moon, Sun, Menu, X } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import type { i18n as I18nInstance } from 'i18next'
 import { SUPPORTED_LANGUAGES } from '../i18n'
 import { useTheme } from '../hooks/useTheme'
 import logoLight from '../assets/logo/itcloud_light.png'
 import logoDark from '../assets/logo/itcloud_dark.png'
+
+type LanguageSelectorProps = {
+  i18n: I18nInstance
+  size?: 'regular' | 'compact'
+}
+
+const NAV_LINKS = [
+  { href: '#about', labelKey: 'about.title' },
+  { href: '#services', labelKey: 'services.title' },
+  { href: '#portfolio', labelKey: 'portfolio.title' },
+  { href: '#contact', labelKey: 'contact.title' },
+] as const
+
+const LanguageSelector: React.FC<LanguageSelectorProps> = ({ i18n, size = 'regular' }) => {
+  const paddingClass = size === 'compact' ? 'px-2.5' : 'px-3'
+
+  return (
+    <div className="flex items-center rounded-full border border-white/20 bg-white/40 p-1 shadow-inner backdrop-blur dark:border-white/10 dark:bg-white/10">
+      {SUPPORTED_LANGUAGES.map((lang) => {
+        const isActive = i18n.resolvedLanguage?.startsWith(lang.code)
+        return (
+          <button
+            key={lang.code}
+            type="button"
+            onClick={() => i18n.changeLanguage(lang.code)}
+            className={`rounded-full ${paddingClass} py-1 text-xs font-semibold transition-all ${
+              isActive ? 'bg-accent text-white shadow-card' : 'text-secondary dark:text-secondary-dark'
+            }`}
+          >
+            {lang.label}
+          </button>
+        )
+      })}
+    </div>
+  )
+}
 
 const SiteHeader: React.FC = () => {
   const { theme, toggleTheme } = useTheme()
@@ -32,40 +69,17 @@ const SiteHeader: React.FC = () => {
         </div>
       </div>
 
-      <div className="hidden flex-1 items-center justify-end gap-6 md:flex">
+      <div className="hidden flex-1 items-center justify-end gap-6 desktop:flex">
         <nav className="flex items-center gap-4 text-sm font-medium text-secondary dark:text-secondary-dark">
-          <a href="#about" className="hover:text-accent transition-colors">
-            {t('about.title')}
-          </a>
-          <a href="#services" className="hover:text-accent transition-colors">
-            {t('services.title')}
-          </a>
-          <a href="#portfolio" className="hover:text-accent transition-colors">
-            {t('portfolio.title')}
-          </a>
-          <a href="#contact" className="hover:text-accent transition-colors">
-            {t('contact.title')}
-          </a>
+          {NAV_LINKS.map(({ href, labelKey }) => (
+            <a key={href} href={href} className="transition-colors hover:text-accent">
+              {t(labelKey)}
+            </a>
+          ))}
         </nav>
 
         <div className="flex items-center gap-3">
-          <div className="flex items-center rounded-full border border-white/20 bg-white/40 p-1 shadow-inner backdrop-blur dark:border-white/10 dark:bg-white/10">
-            {SUPPORTED_LANGUAGES.map((lang) => (
-              <button
-                key={lang.code}
-                type="button"
-                onClick={() => i18n.changeLanguage(lang.code)}
-                className={`rounded-full px-3 py-1 text-xs font-semibold transition-all ${
-                  i18n.resolvedLanguage?.startsWith(lang.code)
-                    ? 'bg-accent text-white shadow-card'
-                    : 'text-secondary dark:text-secondary-dark'
-                }`}
-              >
-                {lang.label}
-              </button>
-            ))}
-          </div>
-
+          <LanguageSelector i18n={i18n} />
           <motion.button
             type="button"
             onClick={toggleTheme}
@@ -98,7 +112,8 @@ const SiteHeader: React.FC = () => {
           </a>
         </div>
       </div>
-      <div className="flex items-center gap-3 md:hidden">
+      <div className="flex items-center gap-3 desktop:hidden">
+        <LanguageSelector i18n={i18n} size="compact" />
         <motion.button
           type="button"
           onClick={toggleTheme}
@@ -141,57 +156,20 @@ const SiteHeader: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="absolute left-0 right-0 top-full mt-3 space-y-4 rounded-2xl border border-white/10 bg-surface/95 px-4 py-4 shadow-card backdrop-blur-md dark:border-white/5 dark:bg-surface-dark/95 md:hidden"
+            className="absolute left-0 right-0 top-full mt-3 space-y-4 rounded-2xl border border-white/10 bg-surface/95 px-4 py-4 shadow-card backdrop-blur-md dark:border-white/5 dark:bg-surface-dark/95 desktop:hidden"
           >
             <nav className="flex flex-col gap-3 text-sm font-medium text-secondary dark:text-secondary-dark">
-              <a
-                href="#about"
-                className="hover:text-accent transition-colors"
-                onClick={() => setMenuOpen(false)}
-              >
-                {t('about.title')}
-              </a>
-              <a
-                href="#services"
-                className="hover:text-accent transition-colors"
-                onClick={() => setMenuOpen(false)}
-              >
-                {t('services.title')}
-              </a>
-              <a
-                href="#portfolio"
-                className="hover:text-accent transition-colors"
-                onClick={() => setMenuOpen(false)}
-              >
-                {t('portfolio.title')}
-              </a>
-              <a
-                href="#contact"
-                className="hover:text-accent transition-colors"
-                onClick={() => setMenuOpen(false)}
-              >
-                {t('contact.title')}
-              </a>
-            </nav>
-            <div className="flex flex-wrap items-center gap-2">
-              {SUPPORTED_LANGUAGES.map((lang) => (
-                <button
-                  key={lang.code}
-                  type="button"
-                  onClick={() => {
-                    i18n.changeLanguage(lang.code)
-                    setMenuOpen(false)
-                  }}
-                  className={`rounded-full px-3 py-1 text-xs font-semibold transition-all ${
-                    i18n.resolvedLanguage?.startsWith(lang.code)
-                      ? 'bg-accent text-white shadow-card'
-                      : 'text-secondary dark:text-secondary-dark'
-                  }`}
+              {NAV_LINKS.map(({ href, labelKey }) => (
+                <a
+                  key={href}
+                  href={href}
+                  className="transition-colors hover:text-accent"
+                  onClick={() => setMenuOpen(false)}
                 >
-                  {lang.label}
-                </button>
+                  {t(labelKey)}
+                </a>
               ))}
-            </div>
+            </nav>
             <a
               href="#contact"
               onClick={() => setMenuOpen(false)}

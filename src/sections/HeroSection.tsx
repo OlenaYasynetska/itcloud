@@ -8,6 +8,9 @@ import {
 import { ExternalLink, Send } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { useSectionLayout } from '../hooks/useSectionLayout'
+import { Link } from 'react-router-dom'
+
+const MotionLink = motion(Link)
 
 const HeroSection: React.FC = () => {
   const { t } = useTranslation()
@@ -83,15 +86,15 @@ const HeroSection: React.FC = () => {
         </p>
 
         <div className="flex flex-wrap gap-4">
-          <motion.a
+          <MotionLink
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            href="#portfolio"
+            to="/portfolio"
             className="flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-glow transition-all hover:-translate-y-0.5 hover:shadow-lg"
           >
             <ExternalLink className="h-4 w-4" aria-hidden />
             {t('hero.ctaPortfolio')}
-          </motion.a>
+          </MotionLink>
           <motion.a
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}

@@ -4,6 +4,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      screens: {
+        desktop: '1000px',
+      },
       colors: {
         background: '#F9FAFB',
         'background-dark': '#0D1117',

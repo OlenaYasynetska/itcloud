@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter Variable', 'Poppins', ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-transparent text-primary m-0 min-h-screen antialiased font-sans;
+}
+
+.dark body {
+  @apply bg-transparent text-primary-dark;
+}
+
+#root {
+  min-height: 100vh;
+}

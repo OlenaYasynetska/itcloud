@@ -51,7 +51,7 @@ const SiteHeader: React.FC = () => {
 
   return (
     <header className="relative z-10 flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-surface/80 px-4 py-4 shadow-card backdrop-blur-md transition-colors duration-500 dark:border-white/5 dark:bg-surface-dark/80 md:px-6 md:gap-8">
-      <div className="flex items-center gap-3 whitespace-nowrap md:gap-4">
+      <div className="flex items-center gap-3 whitespace-nowrap max-[599px]:gap-2 md:gap-4">
         <div className="flex h-12 items-center justify-center rounded-xl px-3 text-sm font-semibold text-secondary transition-colors duration-500 dark:text-secondary-dark">
           <img
             src={theme === 'light' ? logoLight : logoDark}
@@ -59,7 +59,7 @@ const SiteHeader: React.FC = () => {
             className="h-8 w-auto object-contain"
           />
         </div>
-        <div className="flex flex-col">
+        <div className="hidden min-[600px]:flex min-[600px]:flex-col">
           <p className="text-[0.7rem] font-semibold uppercase tracking-[0.25em] text-secondary dark:text-secondary-dark md:text-sm md:tracking-[0.2em]">
             {t('common.name')}
           </p>

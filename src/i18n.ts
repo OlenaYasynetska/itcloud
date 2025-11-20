@@ -60,6 +60,12 @@ const resources = {
               'Повноцінний веб-застосунок: React (frontend) + Node.js / Express (backend) через REST API.',
             link: 'https://pet-shop-frontend-mauve.vercel.app',
           },
+          {
+            title: 'Simply Chocolate Landing — chocolate-sable.vercel.app',
+            description:
+              'Адаптивний промо-лендінг для бренду Simply Chocolate з секціями про переваги, каталог продукції та форму зворотного звʼязку.',
+            link: 'https://chocolate-sable.vercel.app/',
+          },
         ],
       },
       reviews: {
@@ -151,6 +157,12 @@ const resources = {
               'Full-stack web app: React frontend with a Node.js/Express REST API backend.',
             link: 'https://pet-shop-frontend-mauve.vercel.app',
           },
+          {
+            title: 'Simply Chocolate Landing — chocolate-sable.vercel.app',
+            description:
+              'Responsive promo landing for Simply Chocolate with product highlights, benefits, catalog, testimonials, and contact flows.',
+            link: 'https://chocolate-sable.vercel.app/',
+          },
         ],
       },
       reviews: {
@@ -241,6 +253,12 @@ const resources = {
             description:
               'Vollständige Webanwendung: React-Frontend mit Node.js/Express REST API.',
             link: 'https://pet-shop-frontend-mauve.vercel.app',
+          },
+          {
+            title: 'Simply Chocolate Landing — chocolate-sable.vercel.app',
+            description:
+              'Responsives Promo-Landing für Simply Chocolate mit Produkt-Highlights, Vorteilen, Katalog, Testimonials und Kontaktformular.',
+            link: 'https://chocolate-sable.vercel.app/',
           },
         ],
       },

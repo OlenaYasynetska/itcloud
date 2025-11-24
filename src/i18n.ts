@@ -66,6 +66,12 @@ const resources = {
               'Адаптивний промо-лендінг для бренду Simply Chocolate з секціями про переваги, каталог продукції та форму зворотного звʼязку.',
             link: 'https://chocolate-sable.vercel.app/',
           },
+          {
+            title: 'Restaurant Manager — restaurant-manager-angular-frontend.vercel.app',
+            description:
+              'Веб-застосунок для управління рестораном на Angular з функціоналом авторизації та управління меню.',
+            link: 'https://restaurant-manager-angular-frontend.vercel.app/login',
+          },
         ],
       },
       reviews: {
@@ -163,6 +169,12 @@ const resources = {
               'Responsive promo landing for Simply Chocolate with product highlights, benefits, catalog, testimonials, and contact flows.',
             link: 'https://chocolate-sable.vercel.app/',
           },
+          {
+            title: 'Restaurant Manager — restaurant-manager-angular-frontend.vercel.app',
+            description:
+              'Restaurant management web application built with Angular, featuring authentication and menu management functionality.',
+            link: 'https://restaurant-manager-angular-frontend.vercel.app/login',
+          },
         ],
       },
       reviews: {
@@ -259,6 +271,12 @@ const resources = {
             description:
               'Responsives Promo-Landing für Simply Chocolate mit Produkt-Highlights, Vorteilen, Katalog, Testimonials und Kontaktformular.',
             link: 'https://chocolate-sable.vercel.app/',
+          },
+          {
+            title: 'Restaurant Manager — restaurant-manager-angular-frontend.vercel.app',
+            description:
+              'Webanwendung zur Restaurantverwaltung mit Angular, einschließlich Authentifizierung und Menüverwaltung.',
+            link: 'https://restaurant-manager-angular-frontend.vercel.app/login',
           },
         ],
       },

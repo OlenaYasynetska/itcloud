@@ -12,7 +12,7 @@ const resources = {
   uk: {
     translation: {
       common: {
-        name: 'Олена Ясинецька',
+        name: 'ITCloud',
         role: 'Web Developer & IT Consultant',
         contact: 'Контакт',
         portfolio: 'Портфоліо',
@@ -26,7 +26,7 @@ const resources = {
       },
       hero: {
         greeting:
-          'Привіт! Я — Олена Ясинецька, веб-розробниця та IT-консультантка. Створюю сучасні веб-рішення, допомагаю компаніям автоматизувати бізнес-процеси та покращити їхню онлайн-присутність.',
+          'Привіт! ITCloud створює сучасні веб-рішення, допомагає компаніям автоматизувати бізнес-процеси та покращити їхню онлайн-присутність.',
         ctaPortfolio: 'Портфоліо',
         ctaContact: 'Контакт',
       },
@@ -94,7 +94,7 @@ const resources = {
         },
       },
       footer: {
-        rights: '© 2025 Olena Yasynetska',
+        rights: '© 2025 ITCloud',
         privacy: 'Політика конфіденційності',
       },
       pages: {
@@ -115,7 +115,7 @@ const resources = {
   en: {
     translation: {
       common: {
-        name: 'Olena Yasynetska',
+        name: 'ITCloud',
         role: 'Web Developer & IT Consultant',
         contact: 'Contact',
         portfolio: 'Portfolio',
@@ -129,7 +129,7 @@ const resources = {
       },
       hero: {
         greeting:
-          "Hi! I'm Olena Yasynetska, a web developer and IT consultant. I create modern web solutions, help businesses automate their workflows, and improve their online presence.",
+          'Hi! ITCloud creates modern web solutions, helps businesses automate their workflows, and improves their online presence.',
         ctaPortfolio: 'Portfolio',
         ctaContact: 'Contact me',
       },
@@ -197,7 +197,7 @@ const resources = {
         },
       },
       footer: {
-        rights: '© 2025 Olena Yasynetska',
+        rights: '© 2025 ITCloud',
         privacy: 'Privacy Policy',
       },
       pages: {
@@ -218,7 +218,7 @@ const resources = {
   de: {
     translation: {
       common: {
-        name: 'Olena Yasynetska',
+        name: 'ITCloud',
         role: 'Webentwicklerin & IT-Beraterin',
         contact: 'Kontakt',
         portfolio: 'Projekte',
@@ -232,7 +232,7 @@ const resources = {
       },
       hero: {
         greeting:
-          'Hallo! Ich bin Olena Yasynetska, Webentwicklerin und IT-Beraterin. Ich entwickle moderne Weblösungen, helfe Unternehmen bei der Automatisierung von Prozessen und stärke ihre Online-Präsenz.',
+          'Hallo! ITCloud entwickelt moderne Weblösungen, hilft Unternehmen bei der Automatisierung von Prozessen und stärkt ihre Online-Präsenz.',
         ctaPortfolio: 'Projekte',
         ctaContact: 'Kontakt',
       },
@@ -300,7 +300,7 @@ const resources = {
         },
       },
       footer: {
-        rights: '© 2025 Olena Yasynetska',
+        rights: '© 2025 ITCloud',
         privacy: 'Datenschutzerklärung',
       },
       pages: {

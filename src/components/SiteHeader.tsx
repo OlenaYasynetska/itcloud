@@ -55,7 +55,7 @@ const SiteHeader: React.FC = () => {
         <div className="flex h-12 items-center justify-center rounded-xl px-3 text-sm font-semibold text-secondary transition-colors duration-500 dark:text-secondary-dark">
           <img
             src={theme === 'light' ? logoLight : logoDark}
-            alt="Olena Yasynetska logo"
+            alt="ITCloud logo"
             className="h-8 w-auto object-contain"
           />
         </div>

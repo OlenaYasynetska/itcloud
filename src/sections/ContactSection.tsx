@@ -42,7 +42,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ variants, custom }) => 
 
           <div className="flex flex-col gap-4 text-sm text-secondary dark:text-secondary-dark">
             <a
-              href="mailto:olena@example.com"
+              href="mailto:hello@example.com"
               className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/60 p-4 transition hover:-translate-y-0.5 hover:bg-white dark:border-white/5 dark:bg-white/5"
             >
               <Mail className="h-5 w-5 text-accent" aria-hidden />
@@ -89,7 +89,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ variants, custom }) => 
             </label>
             <input
               type="text"
-              placeholder="Olena"
+              placeholder="Alex"
               className="w-full rounded-xl border border-white/30 bg-white/80 px-4 py-3 text-sm text-primary shadow-inner focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30 dark:border-white/10 dark:bg-white/10 dark:text-primary-dark"
             />
           </div>

@@ -50,6 +50,18 @@ const resources = {
         title: 'Проекти',
         items: [
           {
+            title: 'Owl Tracker — online-school-frontend-rose.vercel.app',
+            description:
+              'Платформа для онлайн-школи: гейміфікована мотивація учнів, аналітика прогресу для викладачів і керування навчальними групами.',
+            link: 'https://online-school-frontend-rose.vercel.app/',
+          },
+          {
+            title: 'NimmDa — nimmda.org',
+            description:
+              'Локальний маркетплейс Верхньої Австрії: купівля, продаж, пошук послуг і безкоштовна віддача речей поруч із домом.',
+            link: 'https://www.nimmda.org/',
+          },
+          {
             title: 'UGS Informationssystem — ugs-info.at',
             description: 'Мультишарова архітектура, висока масштабованість.',
             link: 'https://ugs-info.at',
@@ -71,18 +83,6 @@ const resources = {
             description:
               'Веб-застосунок для управління рестораном на Angular з функціоналом авторизації та управління меню.',
             link: 'https://restaurant-manager-angular-frontend.vercel.app/login',
-          },
-          {
-            title: 'Owl Tracker — online-school-frontend-rose.vercel.app',
-            description:
-              'Платформа для онлайн-школи: гейміфікована мотивація учнів, аналітика прогресу для викладачів і керування навчальними групами.',
-            link: 'https://online-school-frontend-rose.vercel.app/',
-          },
-          {
-            title: 'NimmDa — nimmda.org',
-            description:
-              'Локальний маркетплейс Верхньої Австрії: купівля, продаж, пошук послуг і безкоштовна віддача речей поруч із домом.',
-            link: 'https://www.nimmda.org/',
           },
         ],
       },
@@ -165,6 +165,18 @@ const resources = {
         title: 'Portfolio',
         items: [
           {
+            title: 'Owl Tracker — online-school-frontend-rose.vercel.app',
+            description:
+              'Online school platform with gamified student motivation, progress analytics for teachers, and study-group management.',
+            link: 'https://online-school-frontend-rose.vercel.app/',
+          },
+          {
+            title: 'NimmDa — nimmda.org',
+            description:
+              'Local marketplace for Upper Austria to buy, sell, find services, and give things away nearby.',
+            link: 'https://www.nimmda.org/',
+          },
+          {
             title: 'UGS Information System — ugs-info.at',
             description: 'Multi-layer architecture built for scalability.',
             link: 'https://ugs-info.at',
@@ -186,18 +198,6 @@ const resources = {
             description:
               'Restaurant management web application built with Angular, featuring authentication and menu management functionality.',
             link: 'https://restaurant-manager-angular-frontend.vercel.app/login',
-          },
-          {
-            title: 'Owl Tracker — online-school-frontend-rose.vercel.app',
-            description:
-              'Online school platform with gamified student motivation, progress analytics for teachers, and study-group management.',
-            link: 'https://online-school-frontend-rose.vercel.app/',
-          },
-          {
-            title: 'NimmDa — nimmda.org',
-            description:
-              'Local marketplace for Upper Austria to buy, sell, find services, and give things away nearby.',
-            link: 'https://www.nimmda.org/',
           },
         ],
       },
@@ -280,6 +280,18 @@ const resources = {
         title: 'Projekte',
         items: [
           {
+            title: 'Owl Tracker — online-school-frontend-rose.vercel.app',
+            description:
+              'Plattform für die Online-Schule mit gamifizierter Motivation, Fortschrittsanalysen für Lehrkräfte und Verwaltung von Lerngruppen.',
+            link: 'https://online-school-frontend-rose.vercel.app/',
+          },
+          {
+            title: 'NimmDa — nimmda.org',
+            description:
+              'Lokaler Marktplatz für Oberösterreich: kaufen, verkaufen, Dienstleistungen finden und Dinge kostenlos in der Nähe abgeben.',
+            link: 'https://www.nimmda.org/',
+          },
+          {
             title: 'UGS Informationssystem — ugs-info.at',
             description: 'Mehrschichtige Architektur mit hoher Skalierbarkeit.',
             link: 'https://ugs-info.at',
@@ -301,18 +313,6 @@ const resources = {
             description:
               'Webanwendung zur Restaurantverwaltung mit Angular, einschließlich Authentifizierung und Menüverwaltung.',
             link: 'https://restaurant-manager-angular-frontend.vercel.app/login',
-          },
-          {
-            title: 'Owl Tracker — online-school-frontend-rose.vercel.app',
-            description:
-              'Plattform für die Online-Schule mit gamifizierter Motivation, Fortschrittsanalysen für Lehrkräfte und Verwaltung von Lerngruppen.',
-            link: 'https://online-school-frontend-rose.vercel.app/',
-          },
-          {
-            title: 'NimmDa — nimmda.org',
-            description:
-              'Lokaler Marktplatz für Oberösterreich: kaufen, verkaufen, Dienstleistungen finden und Dinge kostenlos in der Nähe abgeben.',
-            link: 'https://www.nimmda.org/',
           },
         ],
       },
